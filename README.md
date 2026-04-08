@@ -1,61 +1,32 @@
-# Ryan (@Rynsta)
+# ryan (@Rynsta)
 
 <p align="center">
   <a href="https://github.com/Rynsta">
-    <img src="https://img.shields.io/badge/GitHub-Rynsta-181717?style=for-the-badge&logo=github" alt="GitHub Badge" />
+    <img src="https://img.shields.io/badge/github-Rynsta-111111?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
-  <img src="https://img.shields.io/badge/Focus-Java%20%7C%20TypeScript%20%7C%20Python-0A66C2?style=for-the-badge" alt="Focus Badge" />
-  <img src="https://img.shields.io/badge/Role-CS%20Student-2ea44f?style=for-the-badge" alt="Role Badge" />
+  <a href="https://modrinth.com/mod/chud">
+    <img src="https://img.shields.io/badge/modrinth-CHUD-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Modrinth CHUD" />
+  </a>
+  <img src="https://img.shields.io/badge/java-block%20game%20enjoyer-ff6a00?style=for-the-badge" alt="Java Block Game Enjoyer" />
 </p>
 
-CS Student, java block game enjoyer.
+cs student. i make stuff for minecraft and whatever seems fun.
 
-## What I'm Building
+## main thing rn
 
-- **Drawly**: A browser party game inspired by telephone-style drawing + guessing loops.
-- **Minecraft HUD Mods**: Utility-focused overlays and commission tracking mods.
-- **Discord Bots / Scripts**: Lightweight automation and fun community tools.
+**CommissionHUD / CHUD is here:**  
+https://modrinth.com/mod/chud
 
-## Featured Projects
+if you want the actual release, use modrinth link above.
 
-### Drawly
-- **Repo**: https://github.com/Rynsta/Drawly
-- **Live**: https://drawly-khaki.vercel.app
-- **Stack**: TypeScript
-- **What it is**: A fun "telephone" style game.
-- **Last updated**: April 7, 2026
+## old/outdated src repos
 
-### CommissionHUD-old-src
-- **Repo**: https://github.com/Rynsta/CommissionHUD-old-src
-- **Stack**: Java
-- **What it is**: Commission display mod for Hypixel Skyblock.
-- **Last updated**: March 27, 2026
+- https://github.com/Rynsta/CommissionHUD-old-src  
+  old source repo, not current
+- https://github.com/Rynsta/HUDMod-1.21.8  
+  older 1.21.8 source, also outdated
 
-### HUDMod-1.21.8
-- **Repo**: https://github.com/Rynsta/HUDMod-1.21.8
-- **Stack**: Java
-- **What it is**: CommissionHUD for 1.21.8.
-- **Last updated**: January 8, 2026
+## quick links
 
-### discord-gambler
-- **Repo**: https://github.com/Rynsta/discord-gambler
-- **Stack**: Python
-- **What it is**: Fake-money gambling bot/game for Discord.
-- **Last updated**: March 10, 2026
-
-## Snapshot
-
-- Public repos: **10**
-- Followers: **1**
-- Following: **1**
-- Profile: https://github.com/Rynsta
-
-## Current Direction
-
-- Leveling up game and systems programming fundamentals.
-- Building polished, playable social game prototypes.
-- Shipping practical Minecraft tooling with clean UX.
-
-## Let's Connect
-
-- GitHub: https://github.com/Rynsta
+- github: https://github.com/Rynsta
+- modrinth: https://modrinth.com/mod/chud
