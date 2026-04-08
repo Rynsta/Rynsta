@@ -20,6 +20,7 @@ https://modrinth.com/mod/chud
 if you want the actual release, use modrinth link above.
 
 **Eon**
+
 private, invite only skyblock macro.
 
 ## old/outdated src repos
