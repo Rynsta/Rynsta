@@ -12,7 +12,7 @@
 
 cs student. i make stuff for minecraft and whatever seems fun.
 
-## main thing rn
+## Java/Kotlin
 
 **CHUD**  
 https://modrinth.com/mod/chud
@@ -29,6 +29,13 @@ private, invite only skyblock macro.
   old source repo, not current
 - https://github.com/Rynsta/HUDMod-1.21.8  
   older 1.21.8 source, also outdated
+
+## drawly
+
+browser game i made with a telephone-style drawing/guessing loop.
+
+- repo: https://github.com/Rynsta/Drawly
+- live: https://drawly-khaki.vercel.app
 
 ## quick links
 
