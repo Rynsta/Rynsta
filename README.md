@@ -15,7 +15,6 @@
 | project | what it is | stack | links |
 | --- | --- | --- | --- |
 | **CHUD** | commission display hud for hypixel skyblock - actively maintained on modrinth | Java | [modrinth](https://modrinth.com/mod/chud) · [old src](https://github.com/Rynsta/CommissionHUD-old-src) |
-| **Drawly** | telephone-style drawing/guessing browser game | TypeScript | [repo](https://github.com/Rynsta/Drawly) · [play](https://drawly-khaki.vercel.app) |
 | **Digy** | png → embroidery machine digitizer | Python | [repo](https://github.com/Rynsta/Digy) |
 | **discord-gambler** | discord bot - gamble your (fake) life savings | Python | [repo](https://github.com/Rynsta/discord-gambler) |
 
