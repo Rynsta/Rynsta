@@ -3,7 +3,6 @@
 <p align="center">
   <a href="https://github.com/Rynsta"><img src="https://img.shields.io/badge/github-Rynsta-111111?style=for-the-badge&logo=github" alt="GitHub" /></a>
   <a href="https://modrinth.com/mod/chud"><img src="https://img.shields.io/badge/modrinth-CHUD-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Modrinth CHUD" /></a>
-  <a href="https://drawly-khaki.vercel.app"><img src="https://img.shields.io/badge/play-drawly-7b5cff?style=for-the-badge" alt="Play Drawly" /></a>
   <img src="https://img.shields.io/badge/java-block%20game%20enjoyer-ff6a00?style=for-the-badge" alt="Java Block Game Enjoyer" />
 </p>
 
