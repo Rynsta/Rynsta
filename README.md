@@ -15,28 +15,24 @@
 
 | project | what it is | stack | links |
 | --- | --- | --- | --- |
-| **CHUD** | commission display hud for hypixel skyblock — actively maintained on modrinth | Java | [modrinth](https://modrinth.com/mod/chud) · [old src](https://github.com/Rynsta/CommissionHUD-old-src) |
+| **CHUD** | commission display hud for hypixel skyblock - actively maintained on modrinth | Java | [modrinth](https://modrinth.com/mod/chud) · [old src](https://github.com/Rynsta/CommissionHUD-old-src) |
 | **Drawly** | telephone-style drawing/guessing browser game | TypeScript | [repo](https://github.com/Rynsta/Drawly) · [play](https://drawly-khaki.vercel.app) |
 | **Digy** | png → embroidery machine digitizer | Python | [repo](https://github.com/Rynsta/Digy) |
-| **discord-gambler** | discord bot — gamble your (fake) life savings | Python | [repo](https://github.com/Rynsta/discord-gambler) |
+| **discord-gambler** | discord bot - gamble your (fake) life savings | Python | [repo](https://github.com/Rynsta/discord-gambler) |
 
 ## active
 
-- **[Drawly](https://github.com/Rynsta/Drawly)** — telephone party game · TypeScript · [play](https://drawly-khaki.vercel.app)
-- **[Digy](https://github.com/Rynsta/Digy)** — png digitizer for embroidery machines · Python
-- **[discord-gambler](https://github.com/Rynsta/discord-gambler)** — fake-money gambling bot · Python
-- **[Fungus](https://github.com/Rynsta/Fungus)** — Java · _wip_
+- **[Digy](https://github.com/Rynsta/Digy)** - png digitizer for embroidery machines · Python
+- **[discord-gambler](https://github.com/Rynsta/discord-gambler)** - fake-money gambling bot · Python
+- **[Fungus](https://github.com/Rynsta/Fungus)** - Java · _wip_
 
 ## archive
 
 source repos kept around for posterity — not the current release.
 
-- **[CommissionHUD-old-src](https://github.com/Rynsta/CommissionHUD-old-src)** ⛑1 — original CHUD source · use [modrinth](https://modrinth.com/mod/chud) for the actual mod
-- **[HUDMod-1.21.8](https://github.com/Rynsta/HUDMod-1.21.8)** — older 1.21.8 source
-- **[bongware](https://github.com/Rynsta/bongware)** ⛑2 — old java thing
+- **[CommissionHUD-old-src](https://github.com/Rynsta/CommissionHUD-old-src)** - original CHUD source · use [modrinth](https://modrinth.com/mod/chud) for the actual mod
+- **[HUDMod-1.21.8](https://github.com/Rynsta/HUDMod-1.21.8)** - older 1.21.8 source
+- **[bongware](https://github.com/Rynsta/bongware)** - old java thing
 
 ## quick links
-
-- github · [@Rynsta](https://github.com/Rynsta)
 - modrinth · [CHUD](https://modrinth.com/mod/chud)
-- live demo · [drawly](https://drawly-khaki.vercel.app)
