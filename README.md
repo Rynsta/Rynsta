@@ -1,36 +1,54 @@
-# ryan (@Rynsta)
+# ryn / [@Rynsta](https://github.com/Rynsta)
 
 <p align="center">
-  <a href="https://github.com/Rynsta"><img src="https://img.shields.io/badge/github-Rynsta-111111?style=for-the-badge&logo=github" alt="GitHub" /></a>
-  <a href="https://modrinth.com/mod/chud"><img src="https://img.shields.io/badge/modrinth-CHUD-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Modrinth CHUD" /></a>
-  <img src="https://img.shields.io/badge/java-block%20game%20enjoyer-ff6a00?style=for-the-badge" alt="Java Block Game Enjoyer" />
+  <a href="https://github.com/Rynsta">
+    <img src="https://img.shields.io/badge/GitHub-Rynsta-181717?style=flat-square&logo=github" alt="GitHub">
+  </a>
+  <a href="https://modrinth.com/mod/chud">
+    <img src="https://img.shields.io/badge/Modrinth-CHUD-00AF5C?style=flat-square&logo=modrinth&logoColor=white" alt="CHUD on Modrinth">
+  </a>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
 </p>
 
-<p align="center">cs student. i make stuff for minecraft and whatever seems fun.</p>
+<p align="center">
+  CS student building Minecraft mods and small software projects.
+</p>
 
----
+## Projects
 
-## featured
+### [CHUD](https://modrinth.com/mod/chud)
 
-| project | what it is | stack | links |
-| --- | --- | --- | --- |
-| **CHUD** | commission display hud for hypixel skyblock - actively maintained on modrinth | Java | [modrinth](https://modrinth.com/mod/chud) · [old src](https://github.com/Rynsta/CommissionHUD-old-src) |
-| **Digy** | png → embroidery machine digitizer | Python | [repo](https://github.com/Rynsta/Digy) |
-| **discord-gambler** | discord bot - gamble your (fake) life savings | Python | [repo](https://github.com/Rynsta/discord-gambler) |
+A lightweight client-side mining utility mod for Hypixel SkyBlock.
 
-## active
+CHUD provides configurable commission and powder tracking, mining tick-rate information, ability helpers, waypoints, and other mining-focused HUD features.
 
-- **[Digy](https://github.com/Rynsta/Digy)** - png digitizer for embroidery machines · Python
-- **[discord-gambler](https://github.com/Rynsta/discord-gambler)** - fake-money gambling bot · Python
-- **[Fungus](https://github.com/Rynsta/Fungus)** - Java · _wip_
+<p>
+  <a href="https://modrinth.com/mod/chud">
+    <img src="https://img.shields.io/badge/View_on-Modrinth-00AF5C?style=flat-square&logo=modrinth&logoColor=white" alt="View CHUD on Modrinth">
+  </a>
+  <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=flat-square" alt="Java">
+</p>
 
-## archive
+### [Fungus](https://github.com/Rynsta/Fungus)
 
-source repos kept around for posterity — not the current release.
+A small base for developing Fabric clients and self-contained client-side modules.
 
-- **[CommissionHUD-old-src](https://github.com/Rynsta/CommissionHUD-old-src)** - original CHUD source · use [modrinth](https://modrinth.com/mod/chud) for the actual mod
-- **[HUDMod-1.21.8](https://github.com/Rynsta/HUDMod-1.21.8)** - older 1.21.8 source
-- **[bongware](https://github.com/Rynsta/bongware)** - old java thing
+Current modules include:
 
-## quick links
-- modrinth · [CHUD](https://modrinth.com/mod/chud)
+* viewmodel customization
+* potion icon hiding
+* scoreboard hiding
+* block highlighting
+
+<p>
+  <a href="https://github.com/Rynsta/Fungus">
+    <img src="https://img.shields.io/badge/View_source-GitHub-181717?style=flat-square&logo=github" alt="View Fungus on GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=flat-square" alt="Java">
+</p>
+
+## About
+
+Most of my current work focuses on Java, Fabric, client-side Minecraft tooling, and experimenting with smaller software projects.
+
+
