@@ -10,8 +10,8 @@
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
 </p>
 
-<p align="center">
-  CS student building Minecraft mods and small software projects.
+<p align="left">
+  CS student with an interest in block game modifications
 </p>
 
 ## Projects
