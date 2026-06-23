@@ -49,6 +49,6 @@ Current modules include:
 
 ## About
 
-Most of my current work focuses on Java, Fabric, client-side Minecraft tooling, and experimenting with smaller software projects.
+Most of my current work focuses on Java, Fabric, and experimenting with smaller software projects.
 
 
