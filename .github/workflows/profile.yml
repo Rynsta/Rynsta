@@ -1,0 +1,41 @@
+name: Profile stats
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/profile/**", ".github/workflows/profile.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install fonttools==4.55.0
+      - name: Fetch IBM Plex
+        working-directory: .github/profile
+        run: |
+          mkdir -p fonts && cd fonts
+          base=https://cdn.jsdelivr.net/gh/IBM/plex@v6.4.0
+          curl -sfLO "$base/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Regular.ttf"
+          curl -sfLO "$base/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-SemiBold.ttf"
+          curl -sfLO "$base/IBM-Plex-Mono/fonts/complete/ttf/IBMPlexMono-Regular.ttf"
+      - name: Render panels
+        run: python .github/profile/render.py
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git add assets
+          git diff --cached --quiet && exit 0
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "Update profile stats"
+          git push
