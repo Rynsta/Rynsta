@@ -11,6 +11,7 @@ Layout: full-width panels are 1200 units, half-width ones 600, and both keep INS
 units clear on each side. Placed side by side at width="50%" with nothing between
 them, two half panels line up exactly under a full one with a 2 * INSET gap.
 """
+import base64
 import datetime as dt
 import json
 import math
@@ -180,7 +181,7 @@ CARDS = [  # slug, width, title, description, minecraft version, link host, tint
     ("chud", 1200, "CHUD",
      "Keeps your commissions, powder, pickaxe ability cooldown and mining stats on screen, with waypoints "
      "and a profit tracker built in. Every HUD can be moved, scaled and recoloured from /chud.",
-     "Fabric 26.2", "modrinth", "#4fc3dc"),
+     "Fabric 26.2", "modrinth", "#3f6fd0"),
     ("fungus", 600, "Fungus",
      "Base for client-side Fabric mods. Comes with viewmodel tweaks, block highlight, and scoreboard "
      "and potion icon hiders.",
@@ -193,11 +194,11 @@ CARDS = [  # slug, width, title, description, minecraft version, link host, tint
 
 
 CARD_SIZE, CARD_LEAD = 23, 32
-HUD_W = 330  # width of the CHUD HUD sketch
+ICON_W = 150  # CHUD's logo on its card
 
 
 def text_width(slug, W):
-    return W - 2 * PAD - (HUD_W + 110 if slug == "chud" else 0)
+    return W - 2 * PAD - (ICON_W + 120 if slug == "chud" else 0)
 
 
 def card_lines(slug, W, desc):
@@ -205,23 +206,12 @@ def card_lines(slug, W, desc):
 
 
 def art_chud(W, H, t, tint, th):
-    """A sketch of CHUD's commission HUD, values illustrative."""
-    x, y, w, h = W - PAD - 70 - HUD_W, 26, HUD_W, H - 52
-    ink = tint if th == "dark" else mix(tint, "#000000", .35)
-    track = mix(t["card"], tint, .18)
-    p = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{mix(t["card"], tint, .08)}" stroke="{mix(t["line"], tint, .5)}"/>',
-         icon("pickaxe", x + 18, y + 16, 16, ink), text("Commissions", x + 42, y + 30, "bold", 15, t["fg"])]
-    rows = [("Mithril Miner", .74), ("Goblin Slayer", .4), ("Titanium Miner", .15)]
-    for i, (name, v) in enumerate(rows):
-        ry = y + 60 + i * 34
-        p += [text(name, x + 18, ry, "mono", 13, t["muted"]),
-              text(f"{round(v * 100)}%", x + w - 18, ry, "mono", 13, t["muted"], anchor="end"),
-              f'<rect x="{x + 18}" y="{ry + 8}" width="{w - 36}" height="6" rx="3" fill="{track}"/>',
-              f'<rect x="{x + 18}" y="{ry + 8}" width="{(w - 36) * v:.0f}" height="6" rx="3" fill="{ink}"/>']
-    py = y + h - 16
-    p += [text("Mithril", x + 18, py, "mono", 13, t["muted"]), text("1.24M", x + 86, py, "mono", 13, t["fg"]),
-          text("Gemstone", x + 168, py, "mono", 13, t["muted"]), text("842k", x + w - 18, py, "mono", 13, t["fg"], anchor="end")]
-    return "".join(p)
+    """CHUD's own logo, centred in the space left of the link icons."""
+    with open(os.path.join(HERE, "icons", "chud.png"), "rb") as f:
+        data = base64.b64encode(f.read()).decode()
+    x, y = W - PAD - 80 - ICON_W, (H - ICON_W) / 2
+    return (f'<image x="{x}" y="{y:.0f}" width="{ICON_W}" height="{ICON_W}" '
+            f'preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{data}"/>')
 
 
 def art_fungus(W, H, t, tint, th):
@@ -257,7 +247,7 @@ def card(slug, W, title, desc, version, host, tint, th):
     rows = max(len(card_lines(sl, w, d)) for sl, w, _, d, *_ in CARDS if w == W)
     H = 100 + (rows - 1) * lead + 80
     if slug == "chud":
-        H = max(H, 250)
+        H = max(H, ICON_W + 70)
     clip = f"clip-{slug}-{th}"
     p = [panel(W, H, t, tint),
          f'<clipPath id="{clip}"><rect x="{INSET + 1}" y="1" width="{W - 2 * INSET - 2}" height="{H - 2}" rx="9"/></clipPath>',
